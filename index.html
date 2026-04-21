@@ -247,7 +247,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Mono',monospace;min-
 const anoAtual = new Date().getFullYear();
 ['ano-ini','ano-fim'].forEach(id => {
   const s = document.getElementById(id);
-  for (let a = anoAtual - 2; a <= anoAtual + 4; a++) {
+  for (let a = anoAtual - 30; a <= anoAtual + 4; a++) {
     const o = document.createElement('option');
     o.value = a; o.textContent = a;
     if (a === anoAtual) o.selected = true;
